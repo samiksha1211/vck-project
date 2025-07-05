@@ -4,20 +4,21 @@ import Header from "../components/Header/Header";
 
 const HomePage= () =>{
     return(
+        <div>
+                <Header/>
         <div className="main-container">
-            <div>
-                 <Header/>
+            
             <div className="page-container"style={{overflow:"auto"}}>
            
-            <div className="hero1" style={{color:"white"}} >
+            <div className="hero-section" style={{color:"white"}} >
                 <img src="\Images\college-banner.png"
                 alt="Vivekanand College banner"
                 className="hero-banner-image"
                 />
-                <div className="hero-overlay-text">
+                <div className="main">
             <h1>Welcome To Vivekanand College!</h1>
             <p>Your journey to excellence starts here.</p>
-            <Link to="/admission" className="btn btn-outline-success"><button>Apply Now </button></Link>
+            <Link to="/admissions" className="nav-item btn primary-btn">Apply Now</Link>{""}
             </div>
             </div>
         
@@ -32,19 +33,22 @@ const HomePage= () =>{
                 <li><b>Strong Placements</b>: Excellent career opportunities with leading companies.</li>
             </ul>
             <h2>Campus Life & Facilities</h2>
-            <img src="https://www.vivekanandcollege.ac.in/uploads/home/WhatsApp%20Image%202025-05-15%20at%2010.31.26%20AM.jpeg" width={"500"}/>
-            <img src="https://vck-ojt.vercel.app/assets/campus-life-Crkero7B.jpg" width={"700"}/>
-            <h6>Explore our vibrant campus and state-of-the-art facilities designed to enhance your learning experience and personal growth.</h6>
-            <h5>Ready to explore our courses?</h5>
-              <Link to="/courses" ><button className="nav-item btn primary-btn" >Explore Courses</button></Link>
+            <div className="imge-gallery">
+            <img src="\Images\students-studying_720.jpg"  width={"400"}
+            alt="Student studing in libary"/>
+            <img src="\Images\campus-life_360.jpg"   width={"500"} alt="Student on campus ground"/>
+                       </div>
+            <p>Explore our vibrant campus and state-of-the-art facilities designed to enhance your learning experience and personal growth.</p>
+            <div className="call-to-action">
+            <p>Ready to explore our courses?</p>
+              <Link to="/courses" className="nav-item btn primary-btn" >Explore Courses</Link>{""}
         
-                        
                         </div>
+                        </div>
+                    
                 </div>
         </div>
     )
 
 }
 export default HomePage;
-
-

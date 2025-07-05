@@ -15,11 +15,11 @@
   background-color: #007BFF;
   /* Primary blue color */
   color: white;
-  padding: 15px 20px;
+  padding:15px 20 px;
   border-top-left-radius: 10px;
   /* Match chat-window border-radius */
   border-top-right-radius: 10px;
-  display: flex;
+  display:flex;
   align-items: center;
   gap: 10px;
   /* Space between icon and text */

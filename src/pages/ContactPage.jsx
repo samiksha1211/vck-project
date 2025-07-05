@@ -1,10 +1,11 @@
-import Header from "../components/Header/Header";
+ import Header from "../components/Header/Header";
 
 const ContactPage = () =>{
     return(
-        <div className="main-container">
-            <div>
+         <div>
                  <Header/>
+        <div className="main-container">
+           
             <div className="page-container"style={{overflow:"auto"}}>
     
                 <h1>Contact Us</h1>

@@ -1,18 +1,12 @@
-/* src/pages/pages.css  */
-.main-container {
-  background-color: #39c4c4;
-   flex-grow: 1;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  padding: 25px 20px;
-  /* Light grey background for the main container */
+body{
+  overflow:hidden;
 }
+
 .page-container {
-  max-width: 960px;
+  max-width: 1100px;
   /* Max width for content to prevent it from stretching too wide */
   height: 500px;
-  margin: 20px auto;
+  margin:20 px auto;
   /* Center the content with some top/bottom margin */
   padding: 20px;
   background-color: #FFFFFF;
@@ -24,35 +18,36 @@
 }
 
 .page-container h1 {
-  color: #007BFF;
+  color: #4259ca;
   /* Primary blue for headings */
   text-align: center;
-  margin-bottom: 25px;
+  margin-top:25px;
+  padding-top:0;
   font-size: 2.5em;
 }
 
 .page-container h2 {
   color: #343A40;
   /* Darker grey for subheadings */
-  margin-top: 30px;
-  margin-bottom: 15px;
-  font-size: 1.8em;
-  border-bottom: 1px solid #eee;
+  margin-top: 40px;
+  margin-bottom: 35px;
+  font-size: 2em;
+  border-bottom: 1px solid #575e5e;
   /* Light line under subheadings */
-  padding-bottom: 10px;
+  padding-bottom: 20px;
 }
 
 .page-container p {
-  line-height: 1.6;
-  color: #555;
+  line-height: 2;
+  color: #2c2d2d;
   margin-bottom: 15px;
 }
 
 .page-container ul {
   list-style-type: disc;
-  margin-left: 20px;
-  margin-bottom: 15px;
-  color: #555;
+  margin-left: 30px;
+  margin-bottom: 25px;
+  color: #131414;
 }
 
 .page-container li {
@@ -78,58 +73,68 @@
 
 .call-to-action .btn:hover {
   background-color: #218838;
-  justify-content: center;
 }
 
 
 /* HomePage Specific Styles */
-.hero-section {
-  position:absolute;
+
+.index{
+  overflow: hidden;
+}
+.main-container{
+  overflow: hidden;
+  background-color: #95e7e6;
+  flex-grow: 1;
+  display:flex;
+  justify-content:center;
+  align-items: flex-start;
+  padding: 25px 20px;
+ 
+}
+.hero-section{
+  position: relative;
   width: 100%;
-  height: 500px;
-  /* Adjust as needed */
+  height: 350px;
   overflow: hidden;
   margin-bottom: 40px;
   border-radius: 8px;
-  /* Match page-container */
 }
 
-.hero-banner-image {
-  width: 110%;
-  height: 150%;
+.hero-banner-image{
+   width: 100%;
+  height: 100%;
   object-fit: fill;
   /* Cover the area, cropping if necessary */
   filter: brightness(60%);
   /* Darken image for text readability */
 }
 
-.hero-overlay-text {
-  position:relative;
-  top: 30%;
+.main {
+  position:absolute;
+  top: 50%;
   left: 50%;
-
-   transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   color: white;
   text-align: center;
-  width: 90%;
+  width: 95%;
   /* Ensure text doesn't hit edges */
 }
 
-.hero-overlay-text h1 {
+.main h1 {
   color: white;
   /* Override blue from .page-container h1 */
-  font-size: 3.5em;
+  font-size: 5em;
   /* Larger heading for banner */
   margin-bottom: 15px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  text-shadow: 2px 2px 4px rgba(242, 230, 230, 0.508);
   /* Add shadow for readability */
 }
 
-.hero-overlay-text p {
+.main p {
   color: white;
   font-size: 1.3em;
   margin-bottom: 25px;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  text-shadow: 1px 1px 2px rgba(223, 232, 237, 0.5);
 }
 
 .hero-btn {
@@ -149,12 +154,12 @@
 }
 
 .image-gallery img {
-  width: 100%;
-  height: 200px;
+  width: 22000%;
+  height: 23000%;
   /* Fixed height for consistency */
   object-fit: cover;
   border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 8px rgba(236, 230, 230, 0.1);
   transition: transform 0.3s ease;
   /* Smooth hover effect */
 }
@@ -188,7 +193,7 @@
 
 .admissions-table th {
   background-color: #E9ECEF;
-  /* Slightly darker background for headers */
+  /Slightly darker background for headers/
   font-weight: bold;
   color: #343A40;
 }
@@ -208,7 +213,7 @@
   margin-left: 25px;
   margin-bottom: 20px;
   list-style-type: decimal;
-  color: #555;
+  color: #081112;
 }
 
 .page-container ol li {
@@ -295,12 +300,12 @@
     /* Shorter banner on smaller screens */
   }
 
-  .hero-overlay-text h1 {
+  .main{
     font-size: 2.2em;
     /* Smaller heading */
   }
 
-  .hero-overlay-text p {
+  .main{
     font-size: 1em;
     /* Smaller paragraph */
   }
@@ -318,24 +323,24 @@
   }
 
   .image-gallery img {
-    height: 180px;
+    height: 250px;
     /* Adjust height for stacked images */
   }
 
-  /* Admissions Table */
+  /* admissions Table */
   /* .admissions-table, .course-details-table {
     display: block; /* Make table block level */
   /* overflow-x: auto; Enable horizontal scroll for table on small screens */
   /* white-space: nowrap; Prevent content from wrapping inside cells */
   /* -webkit-overflow-scrolling: touch; For smooth scrolling on iOS */
   /* } */
-  */ .admissions-table thead,
+   .admissions-table thead,
   .admissions-table tbody,
   .admissions-table th,
   .admissions-table td,
   .admissions-table tr {
     display: block;
-    /* Make table elements stack */
+/* Make table elements stack */
     width: auto;
     /* Allow natural width */
   }
@@ -349,11 +354,24 @@
     padding: 10px;
   }
 
-  .hero-overlay-text h1 {
+  .main h1 {
     font-size: 1.8em;
   }
 
-  .hero-overlay-text p {
-    font-size: 0.9em;
+  .main p {
+    font-size: 0.9em
   }
+}
+explore-section {
+  text-align: center; /* centers inline elements like text and button */
+  margin-top: 20px;
+}
+
+.explore-btn {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: centre;
 }

@@ -3,9 +3,9 @@ import AboutPage from "./pages/AboutPage"
 import HomePage from "./pages/HomePage"
 import ContactPage from "./pages/ContactPage"
 import CoursesPage from "./pages/CoursesPage"
-import AdmissionPage from "./pages/AdmissonPage"
+import AdmissionPage from "./pages/AdmissionPage"
 import './styles/Pages.css'
- import ChatbotComponent from "./components/Chatbot/ChatbotComponents"
+import ChatbotComponent from "./components/Chatbot/ChatbotComponents"
 import Header from "./components/Header/Header"
 import Footer from "./components/Footer/Footer"
 import { useState } from "react"
@@ -19,7 +19,6 @@ const App = () => {
 
   return(
     <div>
-
     <div>
         {/* Your main application content */}
         <DeveloperInfoPopup

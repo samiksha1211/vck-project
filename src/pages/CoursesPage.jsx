@@ -3,9 +3,10 @@ import Header from "../components/Header/Header";
 
 const CoursesPage = () => {
     return(
-        <div className="main-container">
-            <div>
+        <div>
                  <Header/>
+        <div className="main-container">
+            
             <div className="page-container"style={{overflow:"auto"}}>
         
             <h1>Our Academic Programs </h1>
@@ -66,8 +67,11 @@ const CoursesPage = () => {
   </table><hr/>
   <h2>Specialized & Vocational Courses</h2>
   <p>In addition to traditional degree programs, we offer various certificate and diploma courses in areas like Digital Marketing, Web Development, Data Analytics, and Soft Skills Development, providing specialized training for career enhancement.</p>
-       <h2>Have questions about a specific course?</h2>
-       <Link to="/contact"><button button text-align="center" className="nav-item btn primary-btn">Inqurie About Courses</button></Link>
+  <div className="call-to-action">
+       <p>Have questions about a specific course?</p>
+            
+       <Link to="/contact" className="nav-item btn primary-btn">Inqurie About Courses</Link>
+       </div>
        </div>
        </div>
 

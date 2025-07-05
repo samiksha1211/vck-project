@@ -2,9 +2,10 @@ import Header from "../components/Header/Header";
 
 const AboutPage =() =>{
     return(
-        <div className="main-container">
-            <div>
+        <div>
                  <Header/>
+        <div className="main-container">
+            
             <div className="page-container"style={{overflow:"auto"}}>
         
             <h1>About Vivekanand College</h1>
